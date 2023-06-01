@@ -32,8 +32,8 @@
             shuffle2 = new Button();
             reset1 = new Button();
             shuffle1 = new Button();
-            moveToLeft = new Button();
-            moveToRight = new Button();
+            moveTo1Set = new Button();
+            moveTo2Set = new Button();
             zestaw1Box = new ListBox();
             zestaw2Box = new ListBox();
             SuspendLayout();
@@ -78,26 +78,26 @@
             shuffle1.UseVisualStyleBackColor = true;
             shuffle1.Click += shuffle1_Click;
             // 
-            // moveToLeft
+            // moveTo1Set
             // 
-            moveToLeft.Location = new Point(241, 89);
-            moveToLeft.Name = "moveToLeft";
-            moveToLeft.Size = new Size(94, 29);
-            moveToLeft.TabIndex = 6;
-            moveToLeft.Text = "<<";
-            moveToLeft.UseMnemonic = false;
-            moveToLeft.UseVisualStyleBackColor = true;
-            moveToLeft.Click += moveToLeft_Click;
+            moveTo1Set.Location = new Point(241, 89);
+            moveTo1Set.Name = "moveTo1Set";
+            moveTo1Set.Size = new Size(94, 29);
+            moveTo1Set.TabIndex = 6;
+            moveTo1Set.Text = "<<";
+            moveTo1Set.UseMnemonic = false;
+            moveTo1Set.UseVisualStyleBackColor = true;
+            moveTo1Set.Click += moveTo1Set_Click;
             // 
-            // moveToRight
+            // moveTo2Set
             // 
-            moveToRight.Location = new Point(241, 124);
-            moveToRight.Name = "moveToRight";
-            moveToRight.Size = new Size(94, 29);
-            moveToRight.TabIndex = 7;
-            moveToRight.Text = ">>";
-            moveToRight.UseVisualStyleBackColor = true;
-            moveToRight.Click += moveToRight_Click;
+            moveTo2Set.Location = new Point(241, 124);
+            moveTo2Set.Name = "moveTo2Set";
+            moveTo2Set.Size = new Size(94, 29);
+            moveTo2Set.TabIndex = 7;
+            moveTo2Set.Text = ">>";
+            moveTo2Set.UseVisualStyleBackColor = true;
+            moveTo2Set.Click += moveTo2Set_Click;
             // 
             // zestaw1Box
             // 
@@ -124,8 +124,8 @@
             ClientSize = new Size(592, 450);
             Controls.Add(zestaw2Box);
             Controls.Add(zestaw1Box);
-            Controls.Add(moveToRight);
-            Controls.Add(moveToLeft);
+            Controls.Add(moveTo2Set);
+            Controls.Add(moveTo1Set);
             Controls.Add(shuffle1);
             Controls.Add(reset1);
             Controls.Add(shuffle2);
@@ -141,8 +141,8 @@
         private Button shuffle2;
         private Button reset1;
         private Button shuffle1;
-        private Button moveToLeft;
-        private Button moveToRight;
+        private Button moveTo1Set;
+        private Button moveTo2Set;
         private ListBox zestaw1Box;
         private ListBox zestaw2Box;
     }
